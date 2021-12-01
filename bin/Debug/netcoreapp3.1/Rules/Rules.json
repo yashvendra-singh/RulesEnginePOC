@@ -1,0 +1,23 @@
+[
+  {
+    "WorkflowName": "ASDRG",
+    "Rules": [
+      {
+        "RuleName": "ASDRGFAIL",
+        "SuccessEvent": "20",
+        "ErrorMessage": "ASDRG priority factor rule failed.",
+        "ErrorType": "Error",
+        "RuleExpressionType": "LambdaExpression",
+        "Expression": "input1.PriorityFactor.CDIPriorityFactorKey == 10"
+      },
+      {
+        "RuleName": "ASDRGPASS",
+        "SuccessEvent": "17",
+        "ErrorMessage": "ASDRG priority factor rule failed.",
+        "ErrorType": "Error",
+        "RuleExpressionType": "LambdaExpression",
+        "Expression": "input1.PriorityFactor.CDIPriorityFactorKey == 11"
+      }
+    ]
+  }
+]
